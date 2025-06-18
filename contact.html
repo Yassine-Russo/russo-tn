@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact the Russo team for cybersecurity and development inquiries.">
+  <title>Contact | Russo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="script.js" as="script">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+  <div id="progress-bar" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header>
+    <h1>Russo</h1>
+    <nav id="nav-menu" aria-label="Primary Navigation">
+      <a href="index.html">Home</a>
+      <a href="speciality.html">Speciality</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+    <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Russo Team</h2>
+      <p>Reach out or join the discussion on our Discord server.</p>
+      <button id="discord-btn" aria-label="Join our Discord server">Join Discord</button>
+
+      <form id="contact-form" aria-labelledby="contact-heading" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" aria-required="true" />
+          <span class="error-message" id="name-error" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" aria-required="true" />
+          <span class="error-message" id="email-error" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          <span class="error-message" id="message-error" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" aria-label="Send message">Send</button>
+        <p id="form-status" aria-live="polite" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Russo. All rights reserved.</p>
+    <p><small>Last updated: <time datetime="2025-06-18">June 18, 2025</time></small></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
